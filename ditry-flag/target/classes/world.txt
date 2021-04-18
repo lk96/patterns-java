@@ -1,0 +1,20 @@
+The main purpose of GitHub.com is to facilitate the version control and issue tracking aspects of software development. Labels, milestones, responsibility assignment, and a search engine are available for issue tracking. For version control, Git (and by extension GitHub.com) allows pull requests to propose changes to the source code. Users with the ability to review the proposed changes can see a diff of the requested changes and approve them. In Git terminology, this action is called "committing" and one instance of it is a "commit". A history of all commits are kept and can be viewed at a later time.
+
+In addition, GitHub supports the following formats and features:
+
+Documentation, including automatically rendered README files in a variety of Markdown-like file formats (see README § On GitHub)
+Wikis
+GitHub Actions, which allows building continuous integration and continuous deployment pipelines for testing, releasing and deploying software without the use of third-party websites/platforms
+Graphs: pulse, contributors, commits, code frequency, punch card, network, members
+Integrations Directory[69]
+Email notifications
+Discussions
+Option to subscribe someone to notifications by @ mentioning them.[70]
+Emojis[71]
+Nested task-lists within files
+Visualization of geospatial data
+3D render files that can be previewed using a new integrated STL file viewer that displays the files on a "3D canvas".[72] The viewer is powered by WebGL and Three.js.
+Photoshop's native PSD format can be previewed and compared to previous versions of the same file.
+PDF document viewer
+Security Alerts of known Common Vulnerabilities and Exposures in different packages
+GitHub's Terms of Service do not require public software projects hosted on GitHub to meet the Open Source Definition. The terms of service state, "By setting your repositories to be viewed publicly, you agree to allow others to view and fork your repositories."[73]

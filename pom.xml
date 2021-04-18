@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.kevin</groupId>sss
+    <artifactId>java-design-patterns</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>abstract-document</module>
+        <module>abstract-factory</module>
+        <module>acyclic-visitor</module>
+        <module>adapter</module>
+        <module>ambassador</module>
+        <module>aggregator-micriservices</module>
+        <module>singleton</module>
+        <module>prototype</module>
+        <module>builder</module>
+        <module>bridge</module>
+        <module>balking</module>
+        <module>bussiness-delegate</module>
+        <module>byteCode</module>
+        <module>chain</module>
+        <module>callback</module>
+        <module>collection-pipeline</module>
+        <module>circuit-breaker</module>
+        <module>combinator</module>
+        <module>command</module>
+        <module>Commander</module>
+        <module>composite</module>
+        <module>converter</module>
+        <module>data-bus</module>
+        <module>data-locality</module>
+        <module>data-mapper</module>
+        <module>data-transfer-object</module>
+        <module>decorator</module>
+        <module>delegation</module>
+        <module>dependency-inijection</module>
+        <module>ditry-flag</module>
+        <module>double</module>
+        <module>double-checked-locking</module>
+        <module>double-dispatch</module>
+        <module>event-aggregator</module>
+        <module>event-asynchronous</module>
+        <module>update-method</module>
+        <module>unit-of-work</module>
+        <module>value-objet</module>
+        <module>version-number</module>
+        <module>visitor</module>
+        <module>template-method</module>
+        <module>transaction-script</module>
+        <module>trampoline</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
+        <slf4j.version>1.7.30</slf4j.version>
+        <lombok.version>1.18.14</lombok.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>

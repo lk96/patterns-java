@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="event-aggregator" />
+        <module name="unit-of-work" />
+        <module name="template-method" />
+        <module name="combinator" />
+        <module name="decorator" />
+        <module name="data-mapper" />
+        <module name="converter" />
+        <module name="transaction-script" />
+        <module name="circuit-breaker" />
+        <module name="collection-pipeline" />
+        <module name="data-bus" />
+        <module name="event-asynchronous" />
+        <module name="double-dispatch" />
+        <module name="commander" />
+        <module name="composite" />
+        <module name="builder" />
+        <module name="trampoline" />
+        <module name="double-buffer" />
+        <module name="singleton" />
+        <module name="data-locality" />
+        <module name="chain" />
+        <module name="dependency-inijection" />
+        <module name="balking" />
+        <module name="double-checked-locking" />
+        <module name="prototype" />
+        <module name="command" />
+        <module name="abstract-document" />
+        <module name="abstract-factory" />
+        <module name="byteCode" />
+        <module name="data-transfer-object" />
+        <module name="ambassador" />
+        <module name="ditry-flag" />
+        <module name="acyclic-visitor" />
+        <module name="aggregator-micriservices" />
+        <module name="callback" />
+        <module name="value-objet" />
+        <module name="bridge" />
+        <module name="delegation" />
+        <module name="version-number" />
+        <module name="visitor" />
+        <module name="update-method" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
