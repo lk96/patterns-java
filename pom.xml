@@ -61,6 +61,14 @@
         <module>tolerant-reader</module>
         <module>twin</module>
         <module>typeobjectpattern</module>
+        <module>font-controller</module>
+        <module>flyweight</module>
+        <module>facade</module>
+        <module>factory</module>
+        <module>factory-kit</module>
+        <module>factory-method</module>
+        <module>featuretoggle</module>
+        <module>filterer</module>
     </modules>
 
     <properties>

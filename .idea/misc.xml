@@ -8,6 +8,16 @@
         <option value="$PROJECT_DIR$/double-buffer/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/event-aggregator/flyweight/pom.xml" />
+        <option value="$PROJECT_DIR$/event-asynchronous/tls/pom.xml" />
+        <option value="$PROJECT_DIR$/facade/factory/pom.xml" />
+        <option value="$PROJECT_DIR$/image-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/information-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/inventory-miscroservice/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="azul-15" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

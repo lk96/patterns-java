@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>event-aggregator</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>filterer</artifactId>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
