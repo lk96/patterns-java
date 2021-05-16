@@ -3,6 +3,7 @@ package org.kevin.prototype.ambassador;
 public enum RemoteServiceStatus {
 
     FAILURE(-1);
+
     private final long remoteServiceStatusValue;
 
     RemoteServiceStatus(long remoteServiceStatusValue) {

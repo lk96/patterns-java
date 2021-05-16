@@ -1,16 +1,22 @@
 package org.kevin.prototype.ambassador;
 
+import lombok.extern.slf4j.Slf4j;
 import org.kevin.prototype.ambassador.util.RandomProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static java.lang.Thread.sleep;
 
+@Slf4j
 public class RemoteService implements IRemoteService {
 
+    /**
+     *  阈值
+     */
     private static final int THRESHOLD = 200;
-    private static final Logger LOGGER = LoggerFactory.getLogger(RemoteService.class);
+
     private static RemoteService service = null;
+
     private final RandomProvider randomProvider;
 
     static synchronized RemoteService getRemoteService() {
@@ -34,8 +40,8 @@ public class RemoteService implements IRemoteService {
         try {
             sleep(waitTime);
         } catch (InterruptedException e) {
-            LOGGER.info("Thread sleep state interrupted", e);
+            log.info("Thread sleep state interrupted", e);
         }
-        return waitTime <= THRESHOLD ? value * 10 : RemoteServiceStatus.FAILURE.getRemoteServiceStatusValue();
+        return waitTime <= THRESHOLD ? value * 10L : RemoteServiceStatus.FAILURE.getRemoteServiceStatusValue();
     }
 }

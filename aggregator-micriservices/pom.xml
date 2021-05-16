@@ -9,6 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <packaging>pom</packaging>
+    <modules>
+        <module>aggregator-service</module>
+        <module>inventory-microservice</module>
+        <module>information-microservice</module>
+    </modules>
     <artifactId>aggregator-micriservices</artifactId>
 
     <properties>

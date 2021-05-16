@@ -1,14 +1,25 @@
 package org.kevin.prototype.ambassador;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static java.lang.Thread.sleep;
 
+/**
+ * 以安全的方式添加日志记录，延迟测试和服务使用情况，当发生连接问题时，不会增加远程服务器压力
+ */
+@Slf4j
 public class ServiceAmbassador implements IRemoteService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ServiceAmbassador.class);
+    /**
+     * 重试次数
+     */
     private static final int RETRIES = 3;
+
+    /**
+     * 延迟
+     */
     private static final int DELAY_MS = 3000;
 
     public ServiceAmbassador() {
@@ -27,12 +38,13 @@ public class ServiceAmbassador implements IRemoteService {
                 return RemoteServiceStatus.FAILURE.getRemoteServiceStatusValue();
             }
             if ((result = checkLatency(value)) == RemoteServiceStatus.FAILURE.getRemoteServiceStatusValue()) {
-                LOGGER.info("Failed to reach remote:(" + (i + 1) + ")");
+                log.info("Failed to reach remote:(" + (i + 1) + ")");
                 retries++;
                 try {
                     sleep(DELAY_MS);
                 } catch (InterruptedException e) {
-                    LOGGER.info("Thread sleep state interrupted", e);
+                    log.info("Thread sleep state interrupted", e);
+                    Thread.currentThread().interrupt();
                 }
             } else {
                 break;
@@ -45,7 +57,7 @@ public class ServiceAmbassador implements IRemoteService {
         long start = System.currentTimeMillis();
         long result = RemoteService.getRemoteService().doRemoteFunction(value);
         long timeTaken = System.currentTimeMillis() - start;
-        LOGGER.info("Time taken (ms):" + timeTaken);
+        log.info("Time taken (ms):" + timeTaken);
         return result;
     }
 }

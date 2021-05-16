@@ -1,0 +1,6 @@
+server:
+  port: 8081
+
+uri:
+  productInformation: http://localhost:8082/information
+  productInventory: http://localhost:8083/inventories

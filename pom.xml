@@ -39,7 +39,6 @@
         <module>delegation</module>
         <module>dependency-inijection</module>
         <module>ditry-flag</module>
-        <module>double</module>
         <module>double-checked-locking</module>
         <module>double-dispatch</module>
         <module>event-aggregator</module>
@@ -52,6 +51,16 @@
         <module>template-method</module>
         <module>transaction-script</module>
         <module>trampoline</module>
+        <module>active-object</module>
+        <module>api-gateway</module>
+        <module>aync-method-invocation</module>
+        <module>thread-pool</module>
+        <module>thread-pool</module>
+        <module>throttling</module>
+        <module>tls</module>
+        <module>tolerant-reader</module>
+        <module>twin</module>
+        <module>typeobjectpattern</module>
     </modules>
 
     <properties>
