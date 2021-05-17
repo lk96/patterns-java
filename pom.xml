@@ -67,15 +67,26 @@
         <module>factory</module>
         <module>factory-kit</module>
         <module>factory-method</module>
-        <module>featuretoggle</module>
+        <module>feature-toggle</module>
         <module>filterer</module>
+        <module>flux</module>
+        <module>fluent-interface</module>
+        <module>composite-entity</module>
+        <module>cqrs</module>
+        <module>game-loop</module>
+        <module>guarded-suspension</module>
+        <module>half-sync-half-sync</module>
+        <module>hexagonal</module>
+        <module>intercepting-filter</module>
+        <module>interpreter</module>
+        <module>iterator</module>
     </modules>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
-        <slf4j.version>1.7.30</slf4j.version>
-        <lombok.version>1.18.14</lombok.version>
+        <slf4j.version>1.7.29</slf4j.version>
+        <lombok.version>1.18.16</lombok.version>
     </properties>
 
     <dependencies>
